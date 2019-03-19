@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About globus-cli
 ================
 
@@ -18,8 +14,14 @@ A Command Line Interface to Globus.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/globus-cli-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/globus-cli-feedstock)
+
+<table><tr>
+    <td>All platforms:</td>
+    <td>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
