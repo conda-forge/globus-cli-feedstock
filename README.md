@@ -5,9 +5,13 @@ Home: https://github.com/globus/globus-cli
 
 Package license: Apache 2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/globus-cli-feedstock/blob/master/LICENSE.txt)
 
 Summary: Globus CLI
+
+Development: https://github.com/globusonline/globus-cli
+
+Documentation: https://globus.github.io/globus-cli
 
 A Command Line Interface to Globus.
 
