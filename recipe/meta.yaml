@@ -1,5 +1,5 @@
 {% set name = "globus-cli" %}
-{% set version = "1.15.0" %}
+{% set version = "1.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/globus/globus-cli/archive/{{ version }}.tar.gz
-  sha256: 5797500d250165d590df3f4113f6971658efab23df1fb3356a93bbf594530845
+  sha256: cf1c3c9e86f1929ae7b2328fff564a4c4c8b51f59ea137e90fcc794c71ea4c4c
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - python
   run:
     - python
-    - globus-sdk 1.10.0
+    - globus-sdk 1.11.0
     - click >=7.1.1,<8.0
     - jmespath 0.10.0
     - configobj >=5.0.6,<6.0.0
