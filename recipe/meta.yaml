@@ -20,9 +20,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
     - globus-sdk 2.0.1
     - click >=7.1.1,<8.0
     - jmespath 0.10.0
