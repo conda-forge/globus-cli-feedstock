@@ -30,6 +30,8 @@ requirements:
     - requests >=2.0.0,<3.0.0
     - cryptography >=1.8.1,<3.4.0
 test:
+  requires:
+    - pip
   imports:
     - globus_cli
     - globus_cli.commands
@@ -46,6 +48,7 @@ test:
     - globus_cli.services
   commands:
     - globus --help
+    - pip check
 
 about:
   home: https://github.com/globus/globus-cli
