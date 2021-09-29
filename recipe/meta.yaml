@@ -1,5 +1,5 @@
 {% set name = "globus-cli" %}
-{% set version = "2.1.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/globus/globus-cli/archive/{{ version }}.tar.gz
-  sha256: 902fb2264e5094726b57dba665197cb352b10a292e32a0dba9ef2e86636ec5b7
+  sha256: c779e31acd173b0402cd08691a47cee22da2420ad2ed337b4620891ebf9999f6
 
 build:
   number: 0
@@ -23,29 +23,19 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - globus-sdk 2.0.1
-    - click >=7.1.1,<8.0
+    - globus-sdk 3.0.1
+    - click >=8.0.0,<9
     - jmespath 0.10.0
-    - configobj >=5.0.6,<6.0.0
     - requests >=2.0.0,<3.0.0
-    - cryptography >=1.8.1,<3.4.0
+    - cryptography >=1.8.1,<35.0.0
+
 test:
   requires:
     - pip
   imports:
     - globus_cli
     - globus_cli.commands
-    - globus_cli.commands.bookmark
-    - globus_cli.commands.config
-    - globus_cli.commands.endpoint
-    - globus_cli.commands.endpoint.permission
-    - globus_cli.commands.endpoint.role
-    - globus_cli.commands.endpoint.server
-    - globus_cli.commands.task
-    - globus_cli.helpers
-    - globus_cli.parsing
-    - globus_cli.safeio
-    - globus_cli.services
+
   commands:
     - globus --help
     - pip check
