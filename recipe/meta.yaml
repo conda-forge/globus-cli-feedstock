@@ -35,17 +35,7 @@ test:
   imports:
     - globus_cli
     - globus_cli.commands
-    - globus_cli.commands.bookmark
-    - globus_cli.commands.config
-    - globus_cli.commands.endpoint
-    - globus_cli.commands.endpoint.permission
-    - globus_cli.commands.endpoint.role
-    - globus_cli.commands.endpoint.server
-    - globus_cli.commands.task
-    - globus_cli.helpers
-    - globus_cli.parsing
-    - globus_cli.safeio
-    - globus_cli.services
+
   commands:
     - globus --help
     - pip check
