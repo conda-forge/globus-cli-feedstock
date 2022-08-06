@@ -1,5 +1,5 @@
 {% set name = "globus-cli" %}
-{% set version = "3.6.0" %}
+{% set version = "3.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/globus/globus-cli/archive/{{ version }}.tar.gz
-  sha256: 6030dfd390d69756dc2bfb24755cc5c1b32c9029b7811a30ca320d5d3cbfc37f
+  sha256: c9424fb44e8cba8f107a26963b093ee6c657b9f459cc3540771a5f771019ed6f
 
 build:
   number: 0
