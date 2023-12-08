@@ -1,5 +1,5 @@
 {% set name = "globus-cli" %}
-{% set version = "3.20.0" %}
+{% set version = "3.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/globus-cli-{{ version }}.tar.gz
-  sha256: 377a11126e67a82ad17959c5af2bbf386ef1ec6322d1511b9595da0ffd8609da
+  sha256: 91c8e99674689286fba2f3db0510d8b7d0991d8597eae06ef78ce692c390bb9a
 
 build:
   number: 0
