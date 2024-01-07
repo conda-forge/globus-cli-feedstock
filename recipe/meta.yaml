@@ -46,11 +46,10 @@ test:
 about:
   home: https://github.com/globus/globus-cli
   summary: Globus CLI
+  description: A Command Line Interface to Globus.
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: Globus CLI
-  description: A Command Line Interface to Globus.
   doc_url: https://globus.github.io/globus-cli
   dev_url: https://github.com/globusonline/globus-cli
 
