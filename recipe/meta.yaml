@@ -1,5 +1,5 @@
 {% set name = "globus-cli" %}
-{% set version = "3.22.0" %}
+{% set version = "3.23.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/globus-cli-{{ version }}.tar.gz
-  sha256: 3d4ba3e7f61fb1194a20226923ec03e9662897312527d4593ddc0ac3467f30f7
+  sha256: f42350ddaf92eff527135c671a34dec3f32f71cc65bc2dcc9b336024493849f0
 
 build:
   number: 0
@@ -19,10 +19,11 @@ build:
 requirements:
   host:
     - python >=3.7
+    - setuptools >=61.2
     - pip
   run:
     - python >=3.7
-    - globus-sdk ==3.33.0
+    - globus-sdk ==3.34.0
     - click >=8.1.4,<9
     - jmespath ==1.0.1
     - packaging >=17.0
@@ -44,11 +45,11 @@ test:
 
 about:
   home: https://github.com/globus/globus-cli
+  summary: Globus CLI
+  description: A Command Line Interface to Globus.
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: Globus CLI
-  description: A Command Line Interface to Globus.
   doc_url: https://globus.github.io/globus-cli
   dev_url: https://github.com/globusonline/globus-cli
 
