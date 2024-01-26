@@ -12,17 +12,17 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - globus = globus_cli:main
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - setuptools >=61.2
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - globus-sdk ==3.34.0
     - click >=8.1.4,<9
     - jmespath ==1.0.1
