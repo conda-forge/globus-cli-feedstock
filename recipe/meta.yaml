@@ -22,7 +22,6 @@ requirements:
     - setuptools >=61.2
     - pip
   run:
-    - typing_extensions >=4.0
     - python >=3.8
     - globus-sdk ==3.45.0
     - click >=8.1.4,<9
