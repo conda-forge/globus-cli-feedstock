@@ -1,5 +1,5 @@
 {% set name = "globus-cli" %}
-{% set version = "3.31.0" %}
+{% set version = "3.32.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7db86518811ab07b34f9f1279edd0b7db3cb63f00e22e80d41d167a8c1bf632f
+  sha256: e86b6d8a5995e4a1361c959b7ee4062c0cdf7402480a02b2d9f78f6db4f80b32
 
 build:
   number: 0
@@ -22,8 +22,9 @@ requirements:
     - setuptools >=61.2
     - pip
   run:
+    - typing_extensions >=4.0
     - python >=3.8
-    - globus-sdk ==3.45.0
+    - globus-sdk ==3.46.0
     - click >=8.1.4,<9
     - jmespath ==1.0.1
     - packaging >=17.0
