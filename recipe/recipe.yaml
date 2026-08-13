@@ -20,16 +20,17 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - flit-core >=3.11
     - pip
+    - flit-core >=3.11
   run:
     - python >=${{ python_min }}
     - globus-sdk ==4.9.0
     - click >=8.4,<8.5
     - jmespath ==1.1.0
     - packaging >=17.0
-    - requests >=2.34.2,<3.0.0
+    # tightest of upstream's floors (python <3.11)
     - typing_extensions >=4.0
+    - requests >=2.34.2,<3.0.0
 tests:
   - python:
       imports:
