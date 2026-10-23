@@ -28,7 +28,6 @@ requirements:
     - click >=8.4,<8.5
     - jmespath ==1.1.0
     - packaging >=17.0
-    - typing_extensions >=4.0
     - requests >=2.34.2,<3.0.0
     - certifi >=2026.10.19
 tests:
@@ -36,7 +35,9 @@ tests:
       imports:
         - globus_cli
         - globus_cli.commands
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
