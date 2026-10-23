@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: globus-cli
-  version: 3.43.0
+  version: 3.44.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: f6926bac91ce2d84d1317fd84d9d94f3b4e6e5054102740f9bf7bb22bbf42efc
+  sha256: 44881798eeeff7c41a56997c48c7d0de4ba9ac3149cbdd5125f4dfea43d6375a
 
 build:
   number: 0
@@ -28,15 +28,16 @@ requirements:
     - click >=8.4,<8.5
     - jmespath ==1.1.0
     - packaging >=17.0
-    # tightest of upstream's floors (python <3.11)
-    - typing_extensions >=4.0
     - requests >=2.34.2,<3.0.0
+    - certifi >=2026.10.19
 tests:
   - python:
       imports:
         - globus_cli
         - globus_cli.commands
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
